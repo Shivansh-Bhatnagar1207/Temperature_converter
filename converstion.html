@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="shortcut icon" href="resources/icon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="temprature_coverter.css" />
+  </head>
+  <body>
+    <div class="container">
+    <nav><i class="fa-solid fa-scale-balanced">Temperature Converter</i></nav>
+      <div class ="main">
+        <h1 id="headers">Temperature</h1>
+        <label for="input">Enter Temperature</label>
+        <div><input type="text" id = "input_temp" placeholder="Enter temp">
+        <span class="material-symbols-outlined">
+          device_thermostat
+          </span></div>
+        <select  name="Unit" id="Unit">Select Unit
+          <option value ="default" id="option">Select Unit</option>
+          <option value="C" id="option">Celsius</option>
+          <option value="F" id="option">Fahrenheit</option>
+          <option value="K" id="option">Kelvin</option>
+        </select>
+        <button type="submit" onclick="intake()" id="submit">Calculate</button>
+        <label for="Celsius">Celsius</label>
+        <div>
+          <input type="text" name="Celsius" id="Celsius" value="0">
+          &deg;C
+        </div>
+        <label for="Fahrenheit">Fahrenheit</label>
+        <div>
+          <input type="text" name="Fahrenheit" id="Fahrenheit" value="0">
+          &deg;F
+        </div>
+        <label for="Kelvin">Kelvin</label>
+        <div>
+          <input type="text" name="Kelvin" id="Kelvin" value="0">
+          &deg;K
+        </div>
+      </div>
+    <script src="TC.js"></script>
+  </body>
+</html>
