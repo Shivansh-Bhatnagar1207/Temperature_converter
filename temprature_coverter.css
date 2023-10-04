@@ -6,6 +6,8 @@
 body {
   font-size: xx-large;
   color: white;
+  background-image: url(resources/container.jpg);
+  background-size: cover;
 }
 
 nav {
@@ -20,8 +22,6 @@ nav {
 }
 
 .container {
-  background-image: url(resources/container.jpg);
-  background-size: cover;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -55,7 +55,7 @@ nav {
 }
 
 input[type="text"] {
-  font-size: x-large;
+  font-size: large;
   background: transparent;
   color: white;
   border: 1px solid white;
@@ -68,7 +68,7 @@ input[type="text"]::placeholder {
 }
 
 select {
-  font-size: x-large;
+  font-size: large;
   background-color: transparent;
   border: 1px solid white;
   color: white;
@@ -81,7 +81,7 @@ select {
 }
 
 #submit {
-  font-size: x-large;
+  font-size: large;
   border: 1px solid white;
   background-color: transparent;
   color: white;
